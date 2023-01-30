@@ -14,16 +14,14 @@ void main() {
 	printf("**********************\n");
 // Muestra título del juego
 	printf("\n******* MENÚ **********\n");
-	printf("\n1.- Nivel fácil\n");
-	printf("2.- Nivel medio\n");
-	printf("3.- Nivel difícil\n");
+	printf("\n1.- Jugar\n");
 	printf("0.- Salir\n");
 // Muestra el menú y puedes escoger el nivel que quieras (fácil, medio, difícil)
 // PD: Los niveles medio y difícil solo muestra el mapa de hundir la flota
 	do {
-		printf("\nHola, jugador! Escoge un nivel o pulsa el 0 para salir: ");
+		printf("\nHola, jugador! Escoge 1 si quieres jugar o pulsa el 0 para salir: ");
 		scanf("%d", &choose);
-	} while (choose >= 4);
+	} while (choose >= 2);
 // Valida que escojo un numero que esté en el menú
 	switch (choose) {
 	case 0:
@@ -31,7 +29,7 @@ void main() {
 		break;
 // Si escojo el número 0, sale del juego
 	case 1:
-		printf("Has escogido el nivel fácil\n");
+		printf("Has escogido jugar a hundir la flota!\n");
 		printf("   A  B  C  D  E  F  G  H  I  J  \n");
 		printf("1  [] [] [] [] [] [] [] [] [] []  \n");
 		printf("2  [] [] [] [] [] [] [] [] [] []  \n");
@@ -143,34 +141,5 @@ void main() {
 			// Esto es porque he puesto que tiene máximo 20 intentos, y si lo supera te muestra un mensaje diciendo que has perdido
 		}
 		break;
-	case 2:
-		printf("Has escogido el nivel medio\n");
-		printf("   A  B  C  D  E  F  G  H  I  J  \n");
-		printf("1  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("2  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("3  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("4  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("5  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("6  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("7  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("8  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("9  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("10 [] [] [] [] [] [] [] [] [] []  \n");
-		break;
-	case 3:
-		printf("Has escogido el nivel difícil\n");
-		printf("   A  B  C  D  E  F  G  H  I  J  \n");
-		printf("1  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("2  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("3  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("4  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("5  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("6  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("7  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("8  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("9  [] [] [] [] [] [] [] [] [] []  \n");
-		printf("10 [] [] [] [] [] [] [] [] [] []  \n");
-		break;
 	}
 }
-
